@@ -58,130 +58,106 @@ table{border-collapse:collapse;border-spacing:0}
 
 }
 
+@font-face {
+    font-family: 'untitled_sansmedium';
+    src: url('../fonts/untitledsans-medium-webfont.woff2') format('woff2'),
+         url('../fonts/untitledsans-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 body {
     font-family: "untitled_sanslight", sans-serif;
+    background: black;
+    color:white;
 }
 *{
   box-sizing: border-box;
 }
+a{
+  color: white;
+}
 h1{
-  font-size: 5vw;
-  margin: 0px 0 2vw 0;
+  font-weight: normal;
 }
 
-ul{
-  font-size: 2vw;
-  margin: 0;
-}
-ul li{
-  margin-bottom: 1vw;
-}
 
 header{
-  display:-webkit-flex;
   display:flex;
-  -webkit-flex-wrap:wrap;
-  flex-wrap:wrap;
-  -webkit-justify-content:space-around;
-  justify-content:space-around;
+  height: 86vh;
+  position: relative;
 }
 
-.intro{
-  width: 46vw;
-  padding: 6vw;
+header video{
+  width: 80%;
+  margin: 0 auto;
+}
+header h1{
+  font-size: 12vw;
+  position: absolute;
+  bottom:0;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+nav{
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   align-content: space-around;
+  position: sticky;
+  top:0;
 }
 
-.diagram{
-  width: 50vw;
-  padding: 6vw;
+nav .logo img, nav .cta video{
+  height: 12vw;
+  padding: 2vw;
+}
+nav .cta video{
+  border-radius: 100px;
+}
+.cta{
+  position: relative;
 }
 
-.logo img{
-  width: 50%;
-}
-
-.signup{
+.ctaText{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left:0;
+  right: 0;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   align-content: center;
-  margin: 10vw 0;
-}
-
-.signup h1{
-  text-align: center;
-}
-
-.signup p {
+  height: 100%;
+  padding: 0 6vw;
   font-size: 2vw;
-  line-height: 2.8vw;
-  width: 50%;
-  margin: 0 auto 2vw;
 }
 
-.signup p.caption{
-  text-align: center;
-  font-size: 1.5vw;
-  margin-top: 2vw;
+.price{
+  font-family: 'untitled_sansmedium';
+}
+
+.twoUp{
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: center;
+}
+.twoUp video{
+  width: 100%;
+}
+.twoUp div{
+  width: 50%
+}
+
+.twoUp .copySide{
+  padding: 0 0 0 6vw;
+  font-size: 2vw;
 }
 
 @media (min-device-width: 320px) and (max-device-width: 480px) {
 
-  header{
-    display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  align-content: center;
-  }
-  .logo{
-    margin: -24px 0 36px;
-    display: flex;
-  }
-  .logo img{
-    width: 90%;
-    margin: 0 auto;
-  }
-  .diagram{
-    padding: 6vw 6vw 0 6vw;
-  }
-  h1{
-    font-size: 40px;
-    margin: 56px 0 24px;
-  }
-  ul{
-    font-size: 24px;
-  }
-  ul li{
-    margin-bottom: 12px;
-  }
-  .intro{
-    width: 100%;
-  }
-  .diagram{
-    width: 100%;
-  }
-  .signup{
-    margin: 0;
-    padding: 6vw;
-  }
-  .signup h1{
-    text-align: left;
-  }
-  .signup p{
-    font-size: 20px;
-    line-height: 1.2;
-    width: 100%;
-  }
-
-  .signup p.caption{
-    font-size: 16px;
-  }
-  #mc_embed_signup{
-    padding: 6vw 0;
-  }
 }
