@@ -85,7 +85,7 @@ h1{
 
 header{
   display:flex;
-  height: 86vh;
+  height: 75vh;
   position: relative;
 }
 
@@ -94,14 +94,16 @@ header video{
   margin: 0 auto;
 }
 header h1{
-  font-size: 12vw;
+  font-size: 12vmin;
   position: absolute;
   bottom:0;
   text-align: center;
   width: 100%;
   margin: 0 auto;
 }
-
+p{
+  font-size: 2vw;
+}
 nav{
   display: flex;
   justify-content: space-between;
@@ -110,12 +112,12 @@ nav{
   top:0;
 }
 
-nav .logo img, nav .cta video{
+nav .logo img, .cta video{
   height: 12vw;
   padding: 2vw;
 }
 nav .cta video{
-  border-radius: 100px;
+  border-radius: 600px;
 }
 .cta{
   position: relative;
@@ -155,9 +157,31 @@ nav .cta video{
 
 .twoUp .copySide{
   padding: 0 6vw;
-  font-size: 2vw;
 }
 
+.videoUp video{
+  width: 100%;
+}
+.bottomPray{
+  margin-top: 10vw;
+}
+.copyDown{
+  width: 40%;
+  margin: 0 auto;
+}
+.ctaHolder{
+  display: flex;
+  justify-content: space-between;
+  align-content: space-around;
+}
+.ctaHolder .cta{
+  margin: 0 auto;
+}
+.videoPray video{
+  display: block;
+  margin: -5vh auto 0;
+  width: 40%;
+}
 @media (min-device-width: 320px) and (max-device-width: 480px) {
 
 }
